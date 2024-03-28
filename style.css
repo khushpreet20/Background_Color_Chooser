@@ -1,0 +1,82 @@
+
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .container2{
+            position: relative;
+            width: 100vw;
+            /* height: 100vh; */
+            display: flex; 
+            justify-content: space-around;
+            align-items: center;
+            /* border: 1px solid saddlebrown; */
+            flex-wrap: wrap;
+            /* border: 1px solid black; */
+        }
+        .box{
+            position: relative;
+            min-width: 12rem;
+            height: 12rem;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.45s transform linear;
+        }
+        .box:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+        #aquamarine{
+            background-color:aquamarine;
+        }
+        #bisque{
+            background-color:bisque;
+        }
+        #aliceblue{
+            background-color: aliceblue;
+        }
+        #chocolate{
+            background-color:chocolate;
+        }
+        button{
+            position: relative;
+            min-width: 7.5rem;
+            height: 2.5rem;
+            border: none;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 1rem;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(211, 211, 211);
+        }
+        h1, h2,span{
+            text-align: center;
+            margin: 1rem;
+        }
+        @media screen and (max-width: 415px) {
+            .container{
+                position: absolute;
+                width: 100vw;
+                height: fit-content;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        }
